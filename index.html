@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Flex+Grid Forms</title>
+</head>
+<body>
+    <header class="header-container">
+        <h3 class="header-item">Register for</h3>
+        <h1 class="header-item header-title">Full Stack Conference</h1>
+    </header>
+    <!-- ⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑ -->
+    <main class="forms-container">
+        <h3 class="forms-required">⭑ - required form</h3>
+        <form class="info-container">
+                <h1 class="info-title">Basic Info</h1>
+                <article class="name-container input-container">
+                    <label class="name-label input-label" for="name">Name: ⭑</label>
+                    <input class="name-input input-element" id="name" type="text">
+                </article>
+                <article class="email-container input-container">
+                    <label class="email-label input-label" for="email">Email: ⭑</label>
+                    <input class="email-input input-element" id="email" type="text">
+                </article>
+                <article class="job-role-container input-container">
+                    <label class="job-label input-label" for="job">Job Role:</label>
+                    <select class="job-input input-element" id="job">
+                        <option value="none">Select Job Role</option>
+                    </select>
+                </article>
+                <article class="other-container">
+                    <input class="other-job-role input-element" type="text" placeholder="Other job role?">
+                </article>
+
+                <h1 class="shirt-title">T-Shirt Info</h1>
+                <article class="shirt-container">
+                    <section class="size-container input-container">
+                        <label class="color-label input-label" for="color">Size:</label>
+                        <select class="color-input input-element" id="color">
+                            <option value="M">M</option>
+                        </select>
+                    </section>
+                    <section class="design-container input-container">
+                        <label class="design-label input-label" for="design">Design:</label>
+                        <select class="design-input input-element" id="design">
+                            <option value="none">Select theme</option>
+                        </select>
+                    </section>
+                    <section class="color-container input-container">
+                        <label class="color-label input-label" for="color">Color:</label>
+                        <select class="color-input input-element" id="color">
+                            <option value="none">Select a design theme above</option>
+                        </select>
+                    </section>
+                </article>
+        </form>
+
+        <h1 class="activity-title">Register for activities ⭑</h1>
+        <form class="activities-form-container">
+            <article class="activity-container main-conference">
+                <section class="activity-button-section">
+                    <input type="checkbox" class="activity-button"></button>
+                </section>
+                <section class="activity-label-sections">
+                    <section class="activity-section">
+                        <label class=activity-label>Main Conference</label>
+                        <img class="activity-icon" src="images/js.svg">
+                    </section>
+                    <section class="activity-section">
+                        <p class="activity-schedule"></p>
+                        <p class="activity-price">$200</p>
+                    </section>
+                </section>
+            </article>
+            <article class="activity-container js-libraries">
+                <section class="activity-button-section">
+                    <input type="checkbox" class="activity-button"></button>
+                </section>
+                <section class="activity-label-sections">
+                    <section class="activity-section">
+                        <label class=activity-label>JavaScript Libraries Workshop</label>
+                        <img class="activity-icon" src="images/react.svg">
+                    </section>
+                    <section class="activity-section">
+                        <p class="activity-schedule">Tuesday 9am-12pm</p>
+                        <p class="activity-price">$100</p>
+                    </section>
+                </section>
+            </article>
+            <article class="activity-container node-workshop">
+                <section class="activity-button-section">
+                    <input type="checkbox" class="activity-button"></button>
+                </section>
+                <section class="activity-label-sections">
+                    <section class="activity-section">
+                        <label class=activity-label>Node.js Workshop</label>
+                        <img class="activity-icon" src="images/node.svg">
+                    </section>
+                    <section class="activity-section">
+                        <p class="activity-schedule">Tuesday 1pm-4pm</p>
+                        <p class="activity-price">$100</p>
+                    </section>
+                </section>
+            </article>
+            <article class="activity-container js-frameworks">
+                <section class="activity-button-section">
+                    <input type="checkbox" class="activity-button"></button>
+                </section>
+                <section class="activity-label-sections">
+                    <section class="activity-section">
+                        <label class=activity-label>JavaScript Frameworks Workshop</label>
+                        <img class="activity-icon" src="images/angular.svg">
+                    </section>
+                    <section class="activity-section">
+                        <p class="activity-schedule">Tuesday 9am-12am</p>
+                        <p class="activity-price">$100</p>
+                    </section>
+                </section>
+            </article>
+            <article class="activity-container build-tools">
+                <section class="activity-button-section">
+                    <input type="checkbox" class="activity-button"></button>
+                </section>
+                <section class="activity-label-sections">
+                    <section class="activity-section">
+                        <label class=activity-label>Build Tools Workshop</label>
+                        <img class="activity-icon" src="images/build.svg">
+                    </section>
+                    <section class="activity-section">
+                        <p class="activity-schedule">Tuesday 1pm-4pm</p>
+                        <p class="activity-price">$100</p>
+                    </section>
+                </section>
+            </article>
+            <article class="activity-container npm-workshop">
+                <section class="activity-button-section">
+                    <input type="checkbox" class="activity-button"></button>
+                </section>
+                <section class="activity-label-sections">
+                    <section class="activity-section">
+                        <label class=activity-label>npm Workshop</label>
+                        <img class="activity-icon" src="images/npm.svg">
+                    </section>
+                    <section class="activity-section">
+                        <p class="activity-schedule">Tuesday 9am-12am</p>
+                        <p class="activity-price">$100</p>
+                    </section>
+                </section>
+            </article>
+            <article class="activity-container express-workshop">
+                <section class="activity-button-section">
+                    <input type="checkbox" class="activity-button"></button>
+                </section>
+                <section class="activity-label-sections">
+                    <section class="activity-section">
+                        <label class=activity-label>Express Workshop</label>
+                        <img class="activity-icon" src="images/express.svg">
+                    </section>
+                    <section class="activity-section">
+                        <p class="activity-schedule">Tuesday 1pm-4pm</p>
+                        <p class="activity-price">$100</p>
+                    </section>
+                </section>
+            </article>
+        </form>
+
+        <form class="payment-container">
+
+        </form>
+    </main>
+</body>
+</html>

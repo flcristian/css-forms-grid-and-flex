@@ -1,0 +1,191 @@
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Comfortaa', cursive;
+}
+
+input{
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+.header-container{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d86e5e;
+    color: white;
+    height: 130px;
+}
+
+.header-title{
+    font-size: 2.4em;
+    font-weight: 900;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.678);
+    margin: 0;
+}
+
+/* FORMS */
+
+main{
+    padding: 0 30px 0 30px;
+    background-color: #faf6ed;
+}
+
+.forms-required{
+    padding: 40px 0 40px 0;
+}
+
+/* INFO */
+
+.info-container{
+    padding: 20px 0 20px 0;
+    display: grid;
+    grid-template-areas:
+    "basic . shirt"
+    "name . shirt-info"
+    "email . shirt-info"
+    "job other other";
+    grid-template-columns: 4fr 1fr 4fr;
+    column-gap: 30px;
+    row-gap: 10px;
+}
+
+.input-container{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-title{
+    margin: 0;
+    grid-area: basic;
+}
+
+.shirt-title{
+    margin: 0;
+    grid-area: shirt;
+}
+
+.name-container{
+    grid-area: name;
+}
+
+.email-container{
+    grid-area: email; 
+}
+
+.job-role-container{
+    grid-area: job;
+}
+
+.shirt-container{
+    grid-area: shirt-info;
+    display: grid;
+    grid-template-areas:
+    "size design design"
+    "color color color";
+    grid-template-columns: 1fr 2fr 2fr;
+    column-gap: 30px;
+    row-gap: 10px;
+}
+
+.other-container{
+    grid-area: other;
+    display: flex;
+    align-items: center;
+}
+
+.size-container{
+    grid-area: size;
+}
+
+.design-container{
+    grid-area: design;
+}
+
+.color-container{
+    grid-area: color;
+}
+
+.input-label{
+    color: rgb(49, 48, 45);
+}
+
+.input-element{
+    display: inline-block;
+    height: 50px;
+    border: 1px solid rgb(131, 126, 124);
+}
+
+.other-job-role{
+    width: 100%;
+}
+
+/* ACTIVITIES */
+
+.activity-title{
+    padding-bottom: 20px;
+}
+
+.activities-form-container{
+    display: grid;
+    grid-template-areas:
+    "main main"
+    "js-lib node"
+    "js-frame build"
+    "npm express";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 1000px;
+}
+
+.activity-container{
+    display: flex;
+    border: 1px solid rgb(131, 126, 124);
+    background-color: white;
+    padding: 15px;
+    height: 70px;
+    gap: 20px;
+}
+
+.activity-button-section{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.activity-button{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+}
+
+.activity-label-sections{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity-icon{
+    max-width: 20px;
+}
+
+.main-conference{
+    grid-area: main;
+}
