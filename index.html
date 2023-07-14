@@ -171,8 +171,63 @@
         </form>
 
         <form class="payment-container">
+            <section class="payment-title-and-total">
+                <h2 class="payment-total">Total: $0</h2>
+                <h2 class="payment-title">Payment Info</h2>
+            </section>
 
+            <section class="payment-method-container">
+                <section class="payment-method-left-container">
+                    <article class="method-select-container input-container">
+                        <label class="method-select-label input-label" for="method-select">I'm going to pay with: ⭑</label>
+                        <select class="method-select-input input-element" id="method-select">
+                            <option value="none">Select Payment Method</option>
+                        </select>
+                    </article>
+                    <article class="card-number-container input-container">
+                        <label class="card-number-label input-label" for="card-number">Card Number:</label>
+                        <input class="card-number-input input-element" id="card-number" type="text">
+                    </article>
+                </section>
+
+                <section class="payment-method-right-container">
+                    <article class="exp-date-container input-container">
+                        <label class="exp-date-label input-label" for="exp-date">Expiration Date:</label>
+                        <select class="exp-date-input input-element" id="exp-date">
+                            <option value="none">Select Date</option>
+                        </select>
+                    </article>
+                    <article class="exp-year-container input-container">
+                        <label class="exp-year-label input-label" for="exp-year">Expiration Year:</label>
+                        <select class="exp-year-input input-element" id="exp-year">
+                            <option value="none">Select Year</option>
+                        </select>
+                    </article>
+                    <article class="zip-container input-container">
+                        <label class="zip-label input-label" for="zip">Zip code:</label>
+                        <input class="zip-input input-element" id="zip" type="text">
+                    </article>
+                    <article class="cvv-container input-container">
+                        <label class="cvv-label input-label" for="cvv">CVV:</label>
+                        <input class="cvv-input input-element" id="cvv" type="text">
+                    </article>
+                </section>
+            </section>
+
+            <section class="paypal-container other-method-container">
+                <h3 class="other-method-title">PayPal</h3>
+                <p class="otehr-method-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti placeat sit dolore quibusdam rerum maxime soluta quas corrupti! Earum excepturi debitis distinctio iste, tempore in?</p>
+            </section>
+
+            <section class="bitcoin-container other-method-container">
+                <h3 class="other-method-title">Bitcoin</h3>
+                <p class="otehr-method-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti placeat sit dolore quibusdam rerum maxime soluta quas corrupti! Earum excepturi debitis distinctio iste, tempore in?</p>
+            </section>
         </form>
+
+        <section class="register-button-container">
+            <button type="button" class="register-button">Register</button>
+        </section>
     </main>
 </body>
 </html>
